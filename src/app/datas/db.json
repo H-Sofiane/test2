@@ -1,0 +1,64 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "Cristiano",
+      "lastName": "Ronaldo",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg/800px-Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg"
+    },
+    {
+      "id": 2,
+      "firstName": "Karim",
+      "lastName": "Benzema",
+      "photo": "https://i2-prod.football.london/incoming/article28527656.ece/ALTERNATES/s1200b/0_Karim-Benzema.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "Samir",
+      "lastName": "Nasri",
+      "photo": "https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2014/09/26/1321354-28420341-2560-1440.jpg"
+    },
+    {
+      "id": 4,
+      "firstName": "Hatem",
+      "lastName": "Ben Arfa",
+      "photo": "https://tmssl.akamaized.net/images/foto/galerie/hatem-ben-arfa-lille-2021-2022-1645538897-80721.jpg"
+    },
+    {
+      "id": 5,
+      "firstName": "Zinedine",
+      "lastName": "Zidane",
+      "photo": "https://static01.nyt.com/athletic/uploads/wp/2020/04/08095348/ZIDANE-juventus.jpg"
+    },
+    {
+      "id": 6,
+      "firstName": "Karim",
+      "lastName": "Ziani",
+      "photo": "https://tmssl.akamaized.net/images/foto/galerie/ziani-karim-2009-2010-vfl-wolfsburg-1704417540-125609.jpg"
+    },
+    {
+      "id": 7,
+      "firstName": "Riyad",
+      "lastName": "Mahrez",
+      "photo": "https://yop.l-frii.com/wp-content/uploads/2025/02/Riyad-Mahrez-la-star-algerienne-echappe-de-justesse-au-pire.jpg"
+    },
+    {
+      "id": 8,
+      "firstName": "Karim",
+      "lastName": "Matmour",
+      "photo": "https://www.afrik-foot.com/app/uploads/2023/11/icon-fir-080809-77-36.jpg"
+    },
+    {
+      "id": 9,
+      "firstName": "Hakim",
+      "lastName": "Ziyech",
+      "photo": "https://medias.lequipe.fr/img-photo-jpg/hakim-ziyech-sous-le-maillot-de-galatasaray-g-van-keulen-anp-sport-presse-sports/1500000001992764/0:0,1998:1332-1200-800-75/965cd.jpg"
+    },
+    {
+      "id": 10,
+      "firstName": "Achraf",
+      "lastName": "Hakimi",
+      "photo": "https://assets-fr.imgfoot.com/achraf-hakimi-2324-2.jpg"
+    }
+  ]
+}

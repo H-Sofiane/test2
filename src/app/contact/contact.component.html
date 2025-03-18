@@ -1,0 +1,57 @@
+<app-admin-template></app-admin-template>
+<mat-tab-group>
+  <!-- Création d'onglets dynamiques -->
+  <mat-tab *ngFor="let tab of lotsOfTabs" [label]="tab.lastName">
+    <div style="text-align: center; padding: 20px;">
+      <!-- Affiche le nom de famille -->
+      <h3>{{ tab.lastName }}</h3>
+      <!-- Affiche l'image associée si elle existe -->
+      <img
+        *ngIf="tab.photo"
+        [src]="tab.photo"
+        alt="Photo for {{ tab.lastName }}"
+        style="width: 200px; height: auto; border-radius: 8px;"
+      />
+    </div>
+  </mat-tab>
+</mat-tab-group>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Contacts</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <table class="maTable" mat-table [dataSource]="contactsDataSource" >
+      <ng-container matColumnDef="firstName">
+        <th mat-header-cell *matHeaderCellDef> First Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+      </ng-container>
+      <ng-container matColumnDef="lastName">
+        <th mat-header-cell *matHeaderCellDef> Last Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+      </ng-container>
+      <ng-container matColumnDef="photo">
+        <th mat-header-cell *matHeaderCellDef> Photos </th>
+        <td mat-cell *matCellDef="let element" class="mesPhotos">
+          <img class="mesPhotos" mat-card-md-image src={{element.photo}}>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="profile">
+        <th mat-header-cell *matHeaderCellDef> Profile </th>
+        <td mat-cell *matCellDef="let element" >
+          <button (click)="toProfile(element)" mat-raised-button color="primary">
+            <mat-icon>person</mat-icon>
+            Profile
+          </button>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                   showFirstLastButtons
+    >
+    </mat-paginator>
+  </mat-card-content>
+</mat-card>
+
+
